@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block title %}TV Sets{% endblock %}
+
+{% block content %}
+  {% for item in items %}
+    {% include 'items/item_view.html' %}
+  {% endfor %}
+{% endblock %}
