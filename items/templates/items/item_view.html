@@ -1,16 +1,16 @@
 {% load static %}
+  <div class="row align-items-center click-container" style="padding-bottom: 10px;" data-item-id="{{ item.id }}">
+    <div class="col-6 mx-auto text-center item-div">
+      <div class="image-div">
+        <img src="{{ item.item_image.image.url }}" class="img-responsive" alt='Image of an Item'>
+      </div>
 
-<div class="row align-items-center" style="padding-bottom: 10px;">
-  <div class="col-6 mx-auto text-center item-div">
-    <div class="image-div">
-      <img src="{{ item.item_image.image.url }}" class="img-responsive" alt='Image of an Item'>
+      <h4>{{ item.category.category }} {{ item.name }}</h4>
+      <p>
+          {{ item.description|truncatechars_html:70 }}
+      </p>
+      <h4>Number of clicks:</h4>
+      <p class="clicks-number">{{ item.number_of_clicks }}</p>
     </div>
-
-    <h4>{{ item.category.category }} {{ item.name }}</h4>
-    <p>
-        {{ item.description|truncatechars_html:70 }}
-    </p>
-    <p>Number of clicks: {{ item.number_of_clicks }}</p>
-  </div>
 
 </div>
