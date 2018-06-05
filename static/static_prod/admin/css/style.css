@@ -1,0 +1,22 @@
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: #222;
+  list-style-type: none;
+}
+
+.main {
+  color: white;
+  padding-top: 30px;
+}
+
+.item-div {
+  background-color: #888;
+}
+
+.image-div {
+  padding-bottom: 10px;
+}
+
+h1 {
+  text-align: center;
+}
