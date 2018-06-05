@@ -25,9 +25,9 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = '%3b^ag$&61v*kai%@va4!gv7dhw&3fa5vy^ave-0l6kl0ha0&b'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['polar-castle-79081.herokuapp.com/ ']
 
 
 # Application definition
