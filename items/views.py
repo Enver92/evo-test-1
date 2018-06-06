@@ -31,8 +31,6 @@ def clickCount(request):
     item_id = None
     if request.method == "GET":
         item_id = request.GET['item_id']
-        print("****************************************")
-        print(item_id)
 
     item = Item.objects.get(id=item_id)
     if item:
