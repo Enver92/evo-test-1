@@ -23,7 +23,7 @@ class FridgeList(ListView):
 class TVList(ListView):
     model = Item
     context_object_name = 'items'
-    queryset = Item.objects.filter(category__category='TV')
+    queryset = Item.objects.filter(category__category='TV Set')
     template_name = 'items/tv_list.html'
 
 
@@ -39,17 +39,3 @@ def clickCount(request):
         item.save()
 
     return HttpResponse(clicks)
-
-
-
-    # if request.is_ajax():
-    #     item_id = request.POST.get('item_id')
-    #     item = Item.objects.get(id=item_id)
-    #     print(item)
-    #     item.number_of_clicks = F("number_of_clicks") + 1
-    #     item.save()
-    #     item.refresh_from_db()
-    #     print("****************************************")
-    #     response = serializers.serialize('json', list(item.number_of_clicks,), fields=('click'))
-    #
-    #     return HttpResponse(response, mimetype='application/json')
