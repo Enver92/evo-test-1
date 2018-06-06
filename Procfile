@@ -1,1 +1,1 @@
-web: gunicorn evo-test.wsgi
+web: gunicorn evo_test.wsgi
