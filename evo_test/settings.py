@@ -22,11 +22,11 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ['SECRET_KEY']
+ZZ
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-
+SECRET_KEY = '%3b^ag$&61v*kai%@va4!gv7dhw&3fa5vy^ave-0l6kl0ha0&b'
 ALLOWED_HOSTS = ['*']
 
 
@@ -125,7 +125,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-  os.path.join(BASE_DIR, "static", "static_prod"),
+  os.path.join(BASE_DIR, "static", "static_dev"),
 )
 
 
@@ -137,7 +137,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "static", "media")
 
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
+
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 
 # Heroku: Update database configuration from $DATABASE_URL.
 import dj_database_url
